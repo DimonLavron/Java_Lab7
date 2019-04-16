@@ -29,7 +29,7 @@ public class StringProcessor {
         this.number = Integer.parseInt(br.readLine());
     }
 
-    public final StringBuffer textProcessing() {
+    public final String textProcessing() {
         StringBuffer resultText = new StringBuffer();
         String[] words = text.split("\\s+");
         String regex = String.format("(\\d-?){%d,}", number);
@@ -42,6 +42,6 @@ public class StringProcessor {
                 resultText.append(" ");
             }
         }
-        return resultText.delete(resultText.length() - 1, resultText.length());
+        return resultText.toString().trim();
     }
 }

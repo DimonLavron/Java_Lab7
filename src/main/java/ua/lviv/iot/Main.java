@@ -7,7 +7,7 @@ public class Main {
 
         StringProcessor processor = new StringProcessor();
         processor.readInputText();
-        StringBuffer text = processor.textProcessing();
+        String text = processor.textProcessing();
         System.out.println(text);
     }
 }

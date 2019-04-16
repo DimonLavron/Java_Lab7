@@ -19,12 +19,8 @@ class StringProcessorTest {
         processor = new StringProcessor(text, 4);
     }
 
-    @AfterEach
-    void tearDown() {
-    }
-
     @Test
-    void textProcessing() {
-        assertEquals(processor.textProcessing().toString(), expectedText);
+    void testTextProcessing() {
+        assertEquals(processor.textProcessing(), expectedText);
     }
 }
